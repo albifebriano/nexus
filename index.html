@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crypto Research Portal</title>
+  <meta name="description" content="Portal pribadi untuk riset harga, analisis, dan forecasting crypto.">
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="assets/favicon.ico">
+  <script defer src="assets/script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🔍 Crypto Research & Forecasting Portal</h1>
+    <p>Portal pribadi untuk riset harga crypto</p>
+    <div class="top-controls">
+      <input type="text" id="search" placeholder="Cari tools...">
+    </div><br>
+    <nav class="navbar">
+      <button id="toggle-dark" aria-label="Ganti mode gelap/terang">🌓 Dark Mode</button>
+      <button class="navbar-toggle" id="navbar-toggle" aria-label="Buka/Tutup menu">☰</button>
+      <ul class="navbar-menu" id="navbar-menu">
+        <li><a href="#harga">Harga</a></li>
+        <li><a href="#onchain">On-chain</a></li>
+        <li><a href="#backing">Investor</a></li>
+        <li><a href="#tokenomics">Tokenomics</a></li>
+        <li><a href="#sentimen">Sentimen</a></li>
+        <li><a href="#forecasting">Forecasting</a></li>
+        <li><a href="#calendar">Kalender</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="scalp-scanner">
+      <h2>⚡ Scalp Signal Visual</h2>
+      <form id="scanner-form">
+        <input type="text" id="symbol-input" placeholder="Contoh: btc, eth, bonk" required />
+        <button type="submit">Cek Sinyal</button>
+      </form>
+      <div id="signal-result"></div>
+    </section>
+
+    <section id="harga" data-category="chart">
+      <h2>📊 Harga & Chart</h2>
+      <div class="links">
+        <a href="https://coinmarketcap.com" target="_blank" rel="noopener noreferrer" data-desc="Harga & info dasar coin">CoinMarketCap</a>
+        <a href="https://dexscreener.com" target="_blank" rel="noopener noreferrer" data-desc="Pantau harga DEX real-time">DexScreener</a>
+        <a href="https://www.tradingview.com/crypto-screener/" target="_blank" rel="noopener noreferrer" data-desc="Chart teknikal dan analisa harga">TradingView</a>
+      </div>
+    </section>
+
+    <section id="onchain" data-category="onchain">
+      <h2>🔍 On-chain Analysis</h2>
+      <div class="links">
+        <a href="https://platform.arkhamintelligence.com" target="_blank" rel="noopener noreferrer" data-desc="Melacak wallet besar dan inflow">Arkham</a>
+        <a href="https://dune.com" target="_blank" rel="noopener noreferrer" data-desc="Analitik data on-chain custom">Dune Analytics</a>
+        <a href="https://debank.com" target="_blank" rel="noopener noreferrer" data-desc="Pantau wallet & aktivitas defi">DeBank</a>
+      </div>
+    </section>
+
+    <section id="backing" data-category="investor">
+      <h2>👥 Investor & Tim</h2>
+      <div class="links">
+        <a href="https://cryptorank.io" target="_blank" rel="noopener noreferrer" data-desc="Info token sale & investor">CryptoRank</a>
+        <a href="https://crunchbase.com" target="_blank" rel="noopener noreferrer" data-desc="Investor VC dan startup di balik project">Crunchbase</a>
+        <a href="https://messari.io" target="_blank" rel="noopener noreferrer" data-desc="Detail project dan laporan analisis">Messari</a>
+      </div>
+    </section>
+
+    <section id="tokenomics" data-category="tokenomics">
+      <h2>📁 Tokenomics</h2>
+      <div class="links">
+        <a href="https://coingecko.com" target="_blank" rel="noopener noreferrer" data-desc="Supply, FDV, volume coin">CoinGecko</a>
+        <a href="https://token.unlocks.app" target="_blank" rel="noopener noreferrer" data-desc="Jadwal unlock token">TokenUnlocks</a>
+      </div>
+    </section>
+
+    <section id="sentimen" data-category="sentimen">
+      <h2>📰 Sentimen & News</h2>
+      <div class="links">
+        <a href="https://lunarcrush.com" target="_blank" rel="noopener noreferrer" data-desc="Sentimen sosial dan pengaruh media">LunarCrush</a>
+        <a href="https://cryptopanic.com" target="_blank" rel="noopener noreferrer" data-desc="News aggregator untuk crypto">CryptoPanic</a>
+        <a href="https://app.santiment.net" target="_blank" rel="noopener noreferrer" data-desc="Sentimen & analitik sosial + on-chain">Santiment</a>
+      </div>
+    </section>
+
+    <section id="forecasting" data-category="forecast">
+      <h2>📈 Forecasting Tools</h2>
+      <div class="links">
+        <a href="https://app.intotheblock.com" target="_blank" rel="noopener noreferrer" data-desc="Data analitik harga dan whale">IntoTheBlock</a>
+        <a href="https://lookintobitcoin.com" target="_blank" rel="noopener noreferrer" data-desc="Indikator harga BTC">LookIntoBitcoin</a>
+        <a href="https://tokenterminal.com" target="_blank" rel="noopener noreferrer" data-desc="Metrik keuangan project crypto">TokenTerminal</a>
+      </div>
+    </section>
+
+    <section id="calendar">
+      <h2>📅 Kalender Penting</h2>
+      <div class="links">
+        <a href="https://token.unlocks.app" target="_blank" rel="noopener noreferrer" data-desc="Unlock token mingguan">Token Unlock Calendar</a>
+        <a href="https://www.forexfactory.com/calendar" target="_blank" rel="noopener noreferrer" data-desc="Event ekonomi global (CPI, FOMC, dll)">ForexFactory Calendar</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Juli 2025 - Albi Febriano 🚀</p>
+  </footer>
+</body>
+</html>
